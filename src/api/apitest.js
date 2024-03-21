@@ -1,6 +1,4 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react"
-// import build from "next/dist/build"
-
 
 
 export const api = createApi({
@@ -11,20 +9,6 @@ export const api = createApi({
         return headers;
       },
 }),
-    
-    // endpoints:(builder)=>({
-    //     getData: builder.query({
-    //         query:()=>"data"
-    //     }),
-    //     postData: builder.mutation({
-    //         query:(data)=>({
-    //             url:'data',
-    //             method:"POST",
-    //             body:data
-    //         })
-    //     })
-    // })
-
     endpoints: (builder) => ({
         authenticateUser: builder.mutation({
           query: (userData) => ({
